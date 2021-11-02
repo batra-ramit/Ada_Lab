@@ -174,6 +174,7 @@ void HuffmanCodes(char item[], int freq[], int size) {
 
 int main(){
     int n;
+    cout << "\n\n Made By Akash Samal \n\n";
     cin >> n;
     char arr[n];
     int freq[n];
@@ -183,4 +184,5 @@ int main(){
     cout << "\nChar | Huffman code ";
     cout << "\n----------------------\n";
     HuffmanCodes(arr, freq, n);
+    
 }

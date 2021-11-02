@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include<iostream>
+#include <iostream>
 using namespace std;
 void insertionSort(int arr[], int n)
 {
@@ -8,7 +8,7 @@ void insertionSort(int arr[], int n)
     {
         key = arr[i];
         j = i - 1;
- 
+
         /* Move elements of arr[0..i-1], that are
         greater than key, to one position ahead
         of their current position */
@@ -20,7 +20,7 @@ void insertionSort(int arr[], int n)
         arr[j + 1] = key;
     }
 }
- 
+
 // A utility function to print an array of size n
 void printArray(int arr[], int n)
 {
@@ -29,18 +29,20 @@ void printArray(int arr[], int n)
         cout << arr[i] << " ";
     cout << endl;
 }
- 
+
 /* Driver code */
 int main()
 {
-    int arr[5] ;
+    int arr[5];
     int n = 5;
- cout<<endl<<endl<<endl;
-cout<<"Insertion_Sort\nMade By: Khushi\nCSE-A\nRoll no:21\nenter array:\n";
-for(int i=0;i<n;i++)
-    cin>>arr[i];
+    cout << endl
+         << endl
+         << endl;
+    cout << "Insertion_Sort\nMade By: Khushi\nCSE-A\nRoll no:21\nenter array:\n";
+    for (int i = 0; i < n; i++)
+        cin >> arr[i];
     insertionSort(arr, n);
     printArray(arr, n);
- 
+
     return 0;
 }
