@@ -2,7 +2,7 @@
 #include <stdio.h>
 using namespace std;
 
-#define N 4
+#define N 5
 
 void floyds(int b[][N])
 {
